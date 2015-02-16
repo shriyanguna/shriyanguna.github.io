@@ -37,12 +37,34 @@
             <h1>CSS Blog<!--Blog Title Goes Here--></h1>
             <br>
             <p>
-              <!--Blog Post Goes Here-->
+              Hi there! Hope you're well. It's been an incredibly busy week for me, as this week we were tasked with learning both HTML and CSS in order to build our own personal websites! Fortunately, I managed to get it all done, and as a result, you're now able to read this very blog post in a brand new, constantly-improving website!<br><br>
 
+              As I was learning HTML/CSS one feature I found especially interesting was the ability to use "ID's" and "classes" to style HTML elements. When used properly, classes and ID's allow you to streamline the styling process, by targeting specific elements (including paragraphs, headers, div's, tables, etc.).<br><br>
 
+              So what's the difference between the two? Well, a "class" should be used when you have several different elements that you want to give a particular styling and only those elements. For instance, if you wanted several "important" paragraphs in different sections of a large body of text to have a different font color, you could accomplish that using classes.<br><br>
 
-            <br><br><br>
-            -Shriyan
+              In HTML, you could start each paragraph with a (p class="important") tag.<br><br>
+
+              Then in CSS, you could apply a font color of red to those important paragraphs, like so:  #important{ color:red; }<br><br>
+
+              And just like that, those important paragraphs would have red text, while all the other paragraphs would remain their original color! Using classes is like checking an imaginary box next to each element saying that you want them to get the same styling. <br><br>
+
+              ID's on the other hand are unique. Just like your own ID, they can only be used by one element. If you wanted just one paragraph to have red font, but you wanted all the other paragraphs to remain the same color, you could target that paragraph using an ID.<br><br>
+
+              Here's what that would look like:<br><br>
+
+              In HTML, (p id="redparagraph") <br><br>
+
+              And then in CSS: .redparagraph { color:red; } <br><br>
+
+              Note: in CSS, classes are identified using a # and ID's are identified using a "."
+              As always it's best to try these out for yourself! Below you can find an example of the classes and ID's I used to make the homepage of this very site! <br><br>
+              <table>
+                <tr>
+               <img id="screenshot" src="../imgs/Techblog.png"/>
+                </tr>
+              </table>
+
           </p>
           <br>
           <table id="navigate">
