@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+ <html>
+
+   <head>
+     <title>Shriyan's Blog</title>
+     <link rel="stylesheet" type="text/css" href="../stylesheets/default.css" >
+     <link rel="stylesheet" type="text/css" href="../stylesheets/newblogtemp.css" >
+    </head>
+
+    <body>
+      <div id="header">
+        <table>
+          <tr>
+            <td><a href="../index.html">Shriyan C. Gunasekera </a></td>
+            <td><a href="../portfolio/portfolio.html"><img class= "buttons" src="../imgs/shristar.jpg"/></a></td>
+            <td id="current"> Blog </td>
+            <td> <a href="../inspiration/inspiration.html"><img class= "buttons" src="../imgs/sea.jpg"/></a></td>
+           </tr>
+        </table>
+
+        </p>
+        </div>
+
+      <div id="container">
+        <div id="sidebar">
+          <h2>Blog Entries</h2>
+          <ul>
+            <li><a href= "t1-git-blog.html">Git, Guthub Explained!</a></li>
+            <li><a href="c1-chefs-kitchen.html"> Chef's Kitchen</a></li>
+            <li><a href="t2-css-design.html"> HTML/CSS Classes vs. ID's</a></li>
+            <li><a href="t3-arrays-hashes.html"> Ruby Arrays & Hashes</a></li>
+          </ul>
+          <br><br><br>
+          <h2> Other Posts </h2>
+          <ul>
+            <li><a href= "../GPS/gps1-2.html"> GPS - Week 3 </a></li>
+          </ul>
+         </div>
+
+        <div id="content">
+          <div id="blog">
+            <h3>22 February 2015<!--Date Goes Here--> </h3><br>
+            <h1>Ruby: Hashes & Arrays<!--Blog Title Goes Here--></h1>
+            <br>
+            <p>
+              Happy Sunday! Hope everyone's well. Today's blog topic is Ruby and more specifically, Ruby's Array and Hash classes. <br><br>
+
+              Ruby allows for two ways to store sets of data in a single place: Arrays & Hashes. Why does this matter? Well, aside from allowing you to stay organized and know where useful data is stored, arrays and hashes make your life easier by allowing you to apply the same method to every object in a collection of data all at once, through a process called iteration. <br><br>
+
+              Confused? Let's try an example. <br><br>
+
+              Say for instance, you had a set of data that consisted of these similar looking numbers: [34903232, 32323423, 34942432, 32432232, 34954232, 32324222, 3343943, 34958933, 34625193, 34880280, 34950238, 34659293]. And say you wanted to know what number had the maximum value of all of them. Sure, you could take the time to go through and compare each number, but what a lot of effort for such a simple little task. Ruby's array class, however, allows you to find the answer in seconds.<br><br>
+
+              The first step is to create an array that includes all of the aforementioned numbers, like so: <br><br>
+              <img src="../imgs/array_ex1.png"  style = "height:50px; width:300px"/>
+              <br><br>
+              As you can see [] (brackets) are used to define an array in Ruby.<br><br>
+
+              Now that our array is defined, we can call the method "max" on our entire array, like so: <br><br>
+              <img src="../imgs/array_ex2.png"  style = "height:25px; width:150px"/>
+              <br><br>
+              And in a few milliseconds we are given an output of: <br><br>
+              <img src="../imgs/array_ex3.png"  style = "height:50px; width:300px"/>
+              <br><br>
+              Of course this is a very basic example of how we can use arrays, and there are infinitely more ways to use them, but the concept is the same. Arrays, and similarly hashes, make our lives easier by allowing us to manipulate large sets of data in a fraction of the time it would take to manipulate the individual elements on their own.<br><br>
+
+              Hashes are similar to arrays but instead of being defined by brackets we use { } (curly braces) to create a new hash. Furthermore, whereas arrays provide you a medium for storing single pieces of data in a sequential order, hashes allow you to store anything you want in a single place, whether they're related or not. You can store integers, strings, arrays, and anything in between all within the same hash. There's no sequence to it. <br><br>
+
+              So how do you find something in a hash, given there is no order to it? The answer is keys. Every piece of data in a hash is assigned a corresponding and completely unique key when it is added to a hash. When you want to find a particular piece of data, all you have to do is look up the key that was assigned to it, and you should be able to find the data you're looking for. <br><br>
+
+              Here's a simple example of a hash that consists of restaurant items and corresponding prices. In this case, the menu items acts as the keys and the prices are the data we're storing in the hash. <br><br>
+              <img src="../imgs/hash_ex1.png"  style = "height:100px; width:300px"/>
+              <br><br>
+              Again this was a simple example, but the applications are endless.
+
+          </p>
+          <table id="navigate">
+            <tr>
+              <td class="nav"><a href="t2-css-design.html">Previous <!--Link to next Blog Post--></a></td>
+              <!--td class="nav"--><!--a href="../index.html"--><!--Link to next Blog Post-->
+          </tr>
+          </table>
+
+          </div>
+         </div>
+      </div>
+
+     </body>
+ </html>
