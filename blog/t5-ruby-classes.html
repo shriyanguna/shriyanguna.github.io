@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+ <html>
+
+   <head>
+     <title>Shriyan's Blog</title>
+     <link rel="stylesheet" type="text/css" href="../stylesheets/default.css" >
+     <link rel="stylesheet" type="text/css" href="../stylesheets/newblogtemp.css" >
+    </head>
+
+    <body>
+      <div id="header">
+        <table>
+          <tr>
+            <td><a href="../index.html">Shriyan C. Gunasekera </a></td>
+            <td><a href="../portfolio/portfolio.html"><img class= "buttons" src="../imgs/shristar.jpg"/></a></td>
+            <td id="current"> Blog </td>
+            <td> <a href="../inspiration/inspiration.html"><img class= "buttons" src="../imgs/sea.jpg"/></a></td>
+           </tr>
+        </table>
+
+        </p>
+        </div>
+
+      <div id="container">
+        <div id="sidebar">
+          <h2>Blog Entries</h2>
+          <ul>
+            <li><a href= "t1-git-blog.html">Git, Guthub Explained!</a></li>
+            <li><a href="c1-chefs-kitchen.html"> Chef's Kitchen</a></li>
+            <li><a href="t2-css-design.html"> HTML/CSS Classes vs. ID's</a></li>
+            <li><a href="t3-arrays-hashes.html"> Ruby Arrays & Hashes</a></li>
+            <li><a href="c3_thinking-style.html"> Thinking Style: DBC Struggles</a></li>
+            <li><a href="c4-tech-issues.html"> The Gender Gap</a></li>
+            <li><a href="t4-enumerable-methods.html"> Enumerable Methods: Map</a></li>
+            <li><a href="c5-feedback.html"> Pair Programming</a></li>
+            <li><a href="t5-ruby-classes.html"> Ruby Classes</a></li>
+          </ul>
+          <br><br><br>
+          <h2> Other Posts </h2>
+          <ul>
+            <li><a href= "../GPS/gps1-2.html"> GPS - Week 3 </a></li>
+          </ul>
+         </div>
+
+        <div id="content">
+          <div id="blog">
+            <h3>8 March 2015<!--Date Goes Here--> </h3><br>
+            <h1>Ruby Classes<!--Blog Title Goes Here--></h1>
+            <br>
+            <p>
+              In Ruby, the common cliche is, "everything is an object." And just as every living being in the Animal Kingdom belongs to a class, so does every object in Ruby.<br><br>
+
+              Classes, or classifications, are used in Ruby to group objects that have similar traits and access to the same set of methods. Some predefined classes in Ruby, include: Fixnum, String, Array, and Hash. Each of these classes give rise to their own objects, and every object within a class has access to the same set of methods.<br><br>
+
+              Where Ruby really gets interesting though, is the way it permits users to: create entirely new classes of their own, define new methods within those classes, and create objects that can then use those methods. Ruby is an open book that has an existing framework that allows you to do pretty much anything you could ever want to do.<br><br>
+
+              Creating A Class: <br><br>
+
+              To create a class, start a new line of code with the "class" keyword followed by the name of your class. Make sure to begin your class name with a capital letter, as that's how classes are distinguished in Ruby. At creation, you can initialize a class so that anytime a new object is created within that class, the user must provide a particular piece of data that can then be referred to later. In this case, our new class is called "Rapper" and every time an object is created within the "Rapper" class a name must be provided for the new object.<br><br>
+
+              <code>
+                class Rapper<br>
+                  &nbsp def initialize(name)<br>
+                    &nbsp &nbsp @name = name<br>
+                  &nbsp end<br>
+                end<br>
+              </code><br>
+
+              As you may have noticed, at initialization we also took the "name" input and assigned it to a strange looking variable, called @name. This is an instance variable. You've probably already seen local variables, which can be defined within a method and set to a value. Local variables are great because they can be used later on within the same method; but that's it. If you want to use that same local variable in an entirely different method, you can't. That's because local variables are local to the method where they were created. Instance variables are different. You define an instance variable within a class and can then use it anytime you want within that class. The key to distinguish instance variables is that they all begin with an @ symbol.<br><br>
+              Once we've created our class. We can define new instance methods that any object of the class will be able to use. Like instance variables, instance methods can be used at anytime within the same class. Here, we create an instance method called "hubris" that takes the instance variable @name and puts it in a string. <br><br>
+
+              <code>
+                class Rapper<br>
+                  &nbsp def initialize(name)<br>
+                    &nbsp &nbsp @name = name<br>
+                  &nbsp end<br><br>
+
+                &nbsp def hubris<br>
+                  &nbsp &nbsp p "#{@name} is the best! Way better than everyone else!"<br>
+                &nbsp end<br>
+                end<br>
+
+              </code><br>
+
+              And finally, to tie everything together, we can create a new object (called "test") within our "Rapper" class and give it an input at creation. Then, we can call the "hubris" method on that object.<br><br><br>
+
+              <code>
+                test = Rapper.new("Kanye West")<br>
+                test.hubris<br>
+              </code><br><br>
+
+              The output we get is unsurprising to say the least. <br><br><br>
+
+              <code>
+                "Kanye West is the best! Way better than everyone else!"<br>
+              </code><br><br>
+
+              And that's the basics of Ruby Classes!
+
+
+
+          </p>
+          <table id="navigate">
+            <tr>
+              <td class="nav"><a href="c5-feedback.html">Previous <!--Link to next Blog Post--></a></td>
+              <!--td class="nav"--><!--a href="../index.html"--><!--Link to next Blog Post-->
+          </tr>
+          </table>
+
+          </div>
+         </div>
+      </div>
+
+     </body>
+ </html>
