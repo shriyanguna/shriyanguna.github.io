@@ -52,7 +52,7 @@
 
               Classes, or classifications, are used in Ruby to group objects that have similar traits and access to the same set of methods. Some predefined classes in Ruby, include: Fixnum, String, Array, and Hash. Each of these classes give rise to their own objects, and every object within a class has access to the same set of methods.<br><br>
 
-              Where Ruby really gets interesting though, is the way it permits users to: create entirely new classes of their own, define new methods within those classes, and create objects that can then use those methods. Ruby is an open book that has an existing framework that allows you to do pretty much anything you could ever want to do.<br><br>
+              Where Ruby really gets interesting though, is the way it permits users to: create entirely new classes, define new methods within those classes, and create objects that can then use those methods. Ruby is an open book that has an existing framework that allows you to do pretty much anything you could ever want to do.<br><br>
 
               Creating A Class: <br><br>
 
@@ -66,7 +66,8 @@
                 end<br>
               </code><br>
 
-              As you may have noticed, at initialization we also took the "name" input and assigned it to a strange looking variable, called @name. This is an instance variable. You've probably already seen local variables, which can be defined within a method and set to a value. Local variables are great because they can be used later on within the same method; but that's it. If you want to use that same local variable in an entirely different method, you can't. That's because local variables are local to the method where they were created. Instance variables are different. You define an instance variable within a class and can then use it anytime you want within that class. The key to distinguish instance variables is that they all begin with an @ symbol.<br><br>
+              As you may have noticed, at initialization we also took the "name" input and assigned it to a strange looking variable, called @name. This is an instance variable. You've probably already seen local variables, which can be defined within a method and set to a value. Local variables are great because they can be used later on within the same method; but that's it. If you want to use that same local variable in an entirely different method, you can't. That's because local variables are local to the method where they were created.<br><br>
+               Instance variables are different. You define an instance variable within a class and can then use it anytime you want within that class. The key to distinguishing instance variables is that they all begin with an @ symbol.<br><br>
               Once we've created our class. We can define new instance methods that any object of the class will be able to use. Like instance variables, instance methods can be used at anytime within the same class. Here, we create an instance method called "hubris" that takes the instance variable @name and puts it in a string. <br><br>
 
               <code>
