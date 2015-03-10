@@ -1,5 +1,5 @@
 html{
-      background-color: #ff817d;
+      background-color: #FFEBCD;
 }
 
 #header{
@@ -47,7 +47,7 @@ td{
 }
 
 #sidebar{
-        background-color: #8ecbff;
+        background-color: #66a1d2;
         width:15%;
         height: 1200px;
         float:left;
@@ -81,6 +81,10 @@ ul{
 
 .video{
         text-align: center;
+}
+
+a {
+    color: black;
 }
 
 
