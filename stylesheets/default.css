@@ -7,13 +7,15 @@ body{
 
 h1 {
         text-align: center;
-        font-family: 'Domine', serif;
-        font-size: 40pt;
+
+
 
 }
 
 
 .titular {
+          font-family: 'Domine', serif;
+          font-size: 40pt;
           padding-top: 150px;
 
 }
