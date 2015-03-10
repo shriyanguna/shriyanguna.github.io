@@ -1,15 +1,21 @@
 body{
         font-family: Times, sans-serif;
+        height: 100%;
+        width: 100%;
 }
 
 
 h1 {
         text-align: center;
+        font-family: 'Domine', serif;
+        font-size: 40pt;
+
 }
 
 
 .titular {
           padding-top: 150px;
+
 }
 
 
@@ -26,6 +32,8 @@ h1 {
 
 #bars {
         margin-top: -10px;
+         height: inherit;
+        width: inherit;
 }
 
 
@@ -54,14 +62,10 @@ h1 {
 img {
       width: 200px;
       height: 200px;
-      margin: auto;
+      margin: 0px 50px 0px 50px;
+      border-radius: 100pt;
+      border: 1pt solid white;
+
 }
 
-#mid {
-        padding-top: 235px;
-        margin-left: 30%;
-}
 
-#blog {
-        margin-left: 8%;
-}
