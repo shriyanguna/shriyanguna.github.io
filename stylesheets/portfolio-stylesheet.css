@@ -2,6 +2,8 @@ html{
       background-color: #FFEBCD;
 }
 
+/*******************NAVIGATION BAR********************/
+/*Nav Bar Dimensions & Positioning*/
 #header{
         background-color: red;
         width: 100%;
@@ -13,19 +15,8 @@ html{
         padding-left: 20px;
 }
 
-
-#current{
-          font-weight: bold;
-          font-size: 2em;
-}
-
-.buttons {
-            height: 50px;
-            width: 50px;
-            border-radius: 50px;
-}
-
-table {
+/*Nav Bar Table Structure*/
+#nav_bar {
         width: 80%;
         height: 60px;
         text-align: center;
@@ -34,10 +25,27 @@ table {
 
 }
 
-td{
+/*Nav Bar Cell Structure*/
+.nav_cells {
         padding-left: 160px;
 }
 
+
+/*Nav Bar Current Page Icon*/
+#current{
+          font-weight: bold;
+          font-size: 2em;
+}
+
+/*Nav Bar Other Page Circular Icons*/
+.buttons {
+            height: 50px;
+            width: 50px;
+            border-radius: 50px;
+}
+
+/********************Sidebar********************/
+/*Container Div for Sidebar & Body*/
 #container{
             width:1200px;
             position: absolute;
@@ -46,24 +54,39 @@ td{
             height: auto;
 }
 
+/*Sidebar Dimensions & Positioning*/
 #sidebar{
         background-color: #66a1d2;
         width:15%;
-        height: 1200px;
+        height: 1750px;
         float:left;
         position: absolute;
         padding-top: 110px;
         padding-left: 20px;
-
 }
 
+/*Sidebar Headings*/
+h2 {
+    padding-left: 5px;
+}
+
+/*Sidebar Links List*/
 
 ul{
         margin-left: -35px;
         width:150px;
+        color: red;
 }
 
-#content{
+/*Link Formatting */
+
+a {
+    color:black;
+}
+
+/******************Body Section*****************/
+/*Main Body Dimensions & Positioning*/
+#main{
         background-color: #e7fff0;
         width:85%;
         height: 1200px;
@@ -73,20 +96,22 @@ ul{
         padding-top: 110px;
 }
 
-#message {
-            width: 500px;
-}
-
+/*Message about Portfolio*/
 p {
     padding: 25px 150px 50px 150px;
     font-size: 2em;
 }
 
+/*Social Media Table Structure*/
+#social {
+        margin-left: 35%;
+        width: 350px;
+        height: 100px;
+}
+
+/*Social Media Icons*/
 .media {
         width: 100px;
         height: 100px;
 }
 
-a {
-    color: black;
-}

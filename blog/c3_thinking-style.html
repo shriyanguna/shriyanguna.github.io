@@ -9,12 +9,12 @@
 
     <body>
       <div id="header">
-        <table>
+        <table id="nav_bar">
           <tr>
-            <td><a href="../index.html">Shriyan C. Gunasekera </a></td>
-            <td><a href="../portfolio/portfolio.html"><img class= "buttons" src="../imgs/shristar.jpg"/></a></td>
-            <td id="current"> Blog </td>
-            <td> <a href="../inspiration/inspiration.html"><img class= "buttons" src="../imgs/sea.jpg"/></a></td>
+            <td class="nav_cells"><a href="../index.html">Shriyan C. Gunasekera </a></td>
+            <td class="nav_cells"><a href="../portfolio/portfolio.html"><img class= "buttons" src="../imgs/shristar.jpg"/></a></td>
+            <td class="nav_cells" id="current"> Blog </td>
+            <td class="nav_cells"> <a href="../inspiration/inspiration.html"><img class= "buttons" src="../imgs/sea.jpg"/></a></td>
            </tr>
         </table>
 
@@ -27,7 +27,7 @@
           <ul>
             <li><a href= "t1-git-blog.html">Git, Guthub Explained!</a></li>
             <li><a href="c1-chefs-kitchen.html"> Chef's Kitchen</a></li>
-            <li><a href="t2-css-design.html"> HTML/CSS Classes vs. ID's</a></li>
+            <li><a href="t2-css-design.html">HTML/CSS Classes vs. ID's</a></li>
             <li><a href="t3-arrays-hashes.html"> Ruby Arrays & Hashes</a></li>
             <li><a href="c3_thinking-style.html"> Thinking Style: DBC Struggles</a></li>
             <li><a href="c4-tech-issues.html"> The Gender Gap</a></li>
@@ -42,13 +42,15 @@
           </ul>
          </div>
 
-        <div id="content">
-          <div id="blog">
-            <h3>22 February 2015<!--Date Goes Here--> </h3><br>
-            <h1>Thinking Style: DBC Struggles<!--Blog Title Goes Here--></h1>
-            <br>
+        <div id="main">
+          <div id="blog_content">
+            <!--Blog Date Goes Here-->
+            <h3 id="blog_date"> 22 February 2015 </h3><br>
+            <!--Blog Title Goes Here-->
+            <h1 id="blog_title">Thinking Style: DBC Struggles</h1><br>
+            <!--Blog Post Goes Here-->
             <p>
-                My DBC experience to this point has been a lot of things. It's been refreshing (to feel like I'm learning again and to meet so many wonderful people). It's been challenging (balancing a full-time job with what feels like a full-time course load). And it's been uncomfortable (having my weaknesses highlighted and being forced to address them directly).<br><br>
+              My DBC experience to this point has been a lot of things. It's been refreshing (to feel like I'm learning again and to meet so many wonderful people). It's been challenging (balancing a full-time job with what feels like a full-time course load). And it's been uncomfortable (having my weaknesses highlighted and being forced to address them directly).<br><br>
 
                 Now three weeks into Phase 0 (the prep phase), I feel really proud of what I've already accomplished. Despite coming in with no previous web development experience, I now have HTML and CSS skills that I can build on and develop more in the future. I've built a personal website, despite not having a clue how to even get started with an endeavor like that just a few weeks ago. And I'm now beginning to tap into all that the programming language Ruby has to offer. Looking back at the person I was three weeks ago, I can honestly say I'm better. I'm more knowledgeable. I've acquired a whole new set of skills. I've been challenged. And I've persevered in the face of adversity.<br><br>
 
@@ -66,19 +68,29 @@
 
                 These next few months will be no easy undertaking, but I will get through it; and in the end, I will be better for it.
 
+            </p>
 
+          <!--Signature to end Blog Post-->
+            <section id="signature">- S.G. </section><br>
 
-          </p>
-          <table id="navigate">
+          <!--Next & Previous Blog Navigation Buttons-->
+          <table id="blog_navigation">
             <tr>
-              <td class="nav"><a href="t3-arrays-hashes.html">Previous <!--Link to next Blog Post--></a></td>
-              <td class="nav"><a href="c4-tech-issues.html"-->Next <!--Link to next Blog Post--></a></td>
+              <td class="next_prev"><a class="next_prev" href="t3-arrays-hashes.html">Prev</a></td>
+              <td></td>
+              <td class="next_prev"><a class="next_prev" href="c4-tech-issues.html">Next</a></td>
           </tr>
           </table>
+
 
           </div>
          </div>
       </div>
+
+
+
+
+
 
      </body>
  </html>

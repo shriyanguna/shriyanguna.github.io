@@ -9,12 +9,12 @@
 
     <body>
       <div id="header">
-        <table>
+        <table id="nav_bar">
           <tr>
-            <td><a href="../index.html">Shriyan C. Gunasekera </a></td>
-            <td><a href="../portfolio/portfolio.html"><img class= "buttons" src="../imgs/shristar.jpg"/></a></td>
-            <td id="current"> Blog </td>
-            <td> <a href="../inspiration/inspiration.html"><img class= "buttons" src="../imgs/sea.jpg"/></a></td>
+            <td class="nav_cells"><a href="../index.html">Shriyan C. Gunasekera </a></td>
+            <td class="nav_cells"><a href="../portfolio/portfolio.html"><img class= "buttons" src="../imgs/shristar.jpg"/></a></td>
+            <td class="nav_cells" id="current"> Blog </td>
+            <td class="nav_cells"> <a href="../inspiration/inspiration.html"><img class= "buttons" src="../imgs/sea.jpg"/></a></td>
            </tr>
         </table>
 
@@ -27,7 +27,7 @@
           <ul>
             <li><a href= "t1-git-blog.html">Git, Guthub Explained!</a></li>
             <li><a href="c1-chefs-kitchen.html"> Chef's Kitchen</a></li>
-            <li><a href="t2-css-design.html"> HTML/CSS Classes vs. ID's</a></li>
+            <li><a href="t2-css-design.html">HTML/CSS Classes vs. ID's</a></li>
             <li><a href="t3-arrays-hashes.html"> Ruby Arrays & Hashes</a></li>
             <li><a href="c3_thinking-style.html"> Thinking Style: DBC Struggles</a></li>
             <li><a href="c4-tech-issues.html"> The Gender Gap</a></li>
@@ -42,11 +42,13 @@
           </ul>
          </div>
 
-        <div id="content">
-          <div id="blog">
-            <h3>1 March 2015<!--Date Goes Here--> </h3><br>
-            <h1>Enumerable Methods: Map<!--Blog Title Goes Here--></h1>
-            <br>
+        <div id="main">
+          <div id="blog_content">
+            <!--Blog Date Goes Here-->
+            <h3 id="blog_date"> 1 March 2015 </h3><br>
+            <!--Blog Title Goes Here-->
+            <h1 id="blog_title">Enumerable Methods: Map</h1><br>
+            <!--Blog Post Goes Here-->
             <p>
               Hello all! Hope your weekends were great! Today I'd like to teach you about an important enumerable method known as the "map" method.<br><br>
               We've already learned that ruby uses arrays and hashes to store large collections of data. While that's great, there must me more we can do with arrays and hashes than just use them to store data. What if we wanted to take all of that data and transform every single element in a collection into something completely new with a single line of code? Is that even possible? The answer is unsurprisingly a resounding YES! <br><br>
@@ -81,26 +83,29 @@
 
               And that's the map method!
 
+            </p>
 
+          <!--Signature to end Blog Post-->
+            <section id="signature">- S.G. </section><br>
 
-
-
-
-
-
-
-
-          </p>
-          <table id="navigate">
+          <!--Next & Previous Blog Navigation Buttons-->
+          <table id="blog_navigation">
             <tr>
-              <td class="nav"><a href="c4-tech-issues.html">Previous <!--Link to next Blog Post--></a></td>
-              <td class="nav"--><a href="c5-feedback.html">Next <!--Link to next Blog Post--></a></td>
+              <td class="next_prev"><a class="next_prev" href="c4-tech-issues.html">Prev</a></td>
+              <td></td>
+              <td class="next_prev"><a class="next_prev" href="c5-feedback.html">Next</a></td>
           </tr>
           </table>
+
 
           </div>
          </div>
       </div>
+
+
+
+
+
 
      </body>
  </html>

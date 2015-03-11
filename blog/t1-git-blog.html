@@ -9,12 +9,12 @@
 
     <body>
       <div id="header">
-        <table>
+        <table id="nav_bar">
           <tr>
-            <td><a href="../index.html">Shriyan C. Gunasekera </a></td>
-            <td><a href="../portfolio/portfolio.html"><img class= "buttons" src="../imgs/shristar.jpg"/></a></td>
-            <td id="current"> Blog </td>
-            <td> <a href="../inspiration/inspiration.html"><img class= "buttons" src="../imgs/sea.jpg"/></a></td>
+            <td class="nav_cells"><a href="../index.html">Shriyan C. Gunasekera </a></td>
+            <td class="nav_cells"><a href="../portfolio/portfolio.html"><img class= "buttons" src="../imgs/shristar.jpg"/></a></td>
+            <td class="nav_cells" id="current"> Blog </td>
+            <td class="nav_cells"> <a href="../inspiration/inspiration.html"><img class= "buttons" src="../imgs/sea.jpg"/></a></td>
            </tr>
         </table>
 
@@ -42,28 +42,29 @@
           </ul>
          </div>
 
-        <div id="content">
-          <div id="blog">
-            <h3> 7 February 2015 <!--Date Goes Here--> </h3><br>
-            <h1>Git, GitHub Explained</h1>
+        <div id="main">
+          <div id="blog_content">
+            <h3 id="blog_date"> 7 February 2015 <!--Date Goes Here--> </h3><br>
+            <h1 id="blog_title">Git, GitHub Explained</h1>
             <br>
             <p><!--Blog Post Goes Here-->
               Hello new web developers! And welcome to my blog. You're looking swell today! No, no really. My name is Shriyan, and I'll be guiding you along the first few steps of this exciting new journey of yours. I know you must be anxious, seeing as you probably don't know very much about anything, but I assure you by the time you're finished reading this first blog post you will be slightly better off than when you started. And that's what this journey is all about. Baby steps.<br><br>
               As budding web developers, two tools you may or may not have heard about yet are: Git and GitHub. If you haven't, don't worry, as I'm about to explain, but there are two things you should know from the start. First, although they share a similar name, Git and GitHub are two completely separate things that work together to allow you to save, grow, and experiment with your projects. Second, you should know that both Git and GitHub are amazing tools you will soon be using just about everyday.<br><br>
               Before we dive into the nitty gritty, let's first discuss the underlying concept behind both Git and GitHub: version control. The name is fairly self-explanatory, but think of version control as your safety net. Coding can be crazy. Often, answers aren't obvious and will require you to experiment before you arrive at the perfect solution. So how do you experiment with new ideas and code without potentially running into a bug that destroys everything you've worked on in the past? The answer is version control.<br><br>
-              The basis of version control is that you're always going to be working with at least 2 copies of your project. The first, a master copy that contains all of your weeks of hard work in a working, beautiful, mistake-free master version. And the second, a copy that you can experiment with and go wild on. As far as Git and GitHub are concerned, we will use GitHub to store our master copy and reserve Git for our crazy experiments.<br><br.
+              The basis of version control is that you're always going to be working with at least 2 copies of your project. The first, a master copy that contains all of your weeks of hard work in a working, beautiful, mistake-free master version. And the second, a copy that you can experiment with and go wild on. As far as Git and GitHub are concerned, we will use GitHub to store our master copy and reserve Git for our crazy experiments.<br><br>
               So what's the difference between Git and GitHub? And how do they come into play? Well, the first thing you should know is Git is a piece of software that you will access locally right from the terminal of your computer. You don't need an internet connection or anything. GitHub, on the other hand, is a web-based application. You can access GitHub at www.github.com and will need to create a profile and password to use it. Most importantly though, you should know that while they are different, Git and GitHub will be used in conjunction with one another to change, save, and update your projects.<br><br>
               When working on a project, ideally you will store a master copy of your work in a "repository," which is just another name for a folder, on github.com. At the same time, you will have a separate, experimental copy of your project saved locally on your computer. As you make changes to your local copy and see that everything is still working the way you want it to, you will use git commands (via your computer's terminal) to track, save (called "commit"), and "push" changes onto your master copy at github.com. GitHub will then seamlessly merge the changes made with the old master copy, leaving you with a new, updated, master version of your work. And just like that you will have added changes to an existing master copy without destroying everything.<br><br>
               Once you get the hang of it, you'll quickly begin to realize that the benefits of using Git and GitHub are endless. For one thing, they allow you to collaborate with a team of people on a single project, while still simultaneously keeping track of and updating your changes to a single master copy. Additionally, using the "git log" command in your terminal, you will be able to see a log of all the changes you or anyone else has made over the course of the project, as well as details regarding the time and reason for a change. Similarly, the log can be accessed from Github as well.<br><br>
               So that's basically it. It may still all seem a bit confusing. Believe me, I can relate. I was there not even a week ago. But the best way to use each of these tools is to read more about them, do online tutorials, and finally start using them for yourself. It will definitely seem foreign at first and maybe even a little scary. But all of a sudden, it'll all come together, and it'll be amazing.<br><br>
-              Till Next Time.
-              <br><br>
-              -Shriyan
-          </p>
+            </p>
+            <section id="signature">- S.G. </section>
+
           <br>
-          <table id="navigate">
+          <table id="blog_navigation">
             <tr>
-              <td class="nav"><a href="c1-chefs-kitchen.html">Next <!--Link to next Blog Post--></a></td>
+              <td class="next_prev"><a class="next_prev" href="../index.html">Prev</a></td>
+              <td></td>
+              <td class="next_prev"><a class="next_prev" href="c1-chefs-kitchen.html">Next</a></td>
           </tr>
           </table>
 

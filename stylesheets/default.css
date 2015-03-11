@@ -1,44 +1,29 @@
 body{
-
         height: 100%;
         width: 100%;
 }
 
 
-h1 {
-        text-align: center;
-
-
-
-}
-
-
-.titular {
-          font-family: 'Domine', serif;
-          font-size: 40pt;
-          padding-top: 150px;
-
-}
-
-
-#left {
-        background-color: #8ecbff;
-        width: 33%;
-        display: inline-block;
-        float:left;
-        height: 700px;
-        position: absolute;
-        border-right: 100pt solid black;
-
-}
-
+/**************Dimensions and Positioning of 3 Columns*****************/
+/*Container Div for 3 Bars*/
 #bars {
         margin-top: -10px;
          height: inherit;
         width: inherit;
 }
 
+/*Left Column - Portfolio */
+#left {
+        background-color: #66a1d2;
+        width: 33%;
+        display: inline-block;
+        float:left;
+        height: 700px;
+        position: absolute;
+        border-right: 100pt solid black;
+}
 
+/*Center Column - Blog */
 #center {
         background-color: #e7fff0;
         width: 33%;
@@ -49,6 +34,7 @@ h1 {
         position: absolute;
 }
 
+/*Right Column - Inspiration */
 #right {
         background-color: #ff817d;
         width: 33%;
@@ -57,17 +43,26 @@ h1 {
         float:left;
         height: 700px;
         position: absolute;
-
 }
 
+/*****************Formatting of Text & Images********************/
+/*Centering of objects within Columns*/
+h1 {
+        text-align: center;
+}
 
+/* Circular Pads that Link to Landing Pages*/
 .launchpad {
       width: 200px;
       height: 200px;
       margin: 0px 50px 0px 50px;
       border-radius: 100pt;
       border: 1pt solid white;
-
 }
 
-
+/*Page Titles*/
+.titular {
+          font-family: 'Domine', serif;
+          font-size: 40pt;
+          padding-top: 150px;
+}

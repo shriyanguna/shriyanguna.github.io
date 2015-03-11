@@ -2,6 +2,8 @@ html{
       background-color: #FFEBCD;
 }
 
+/***************NAVIGATION BAR***************/
+/*Nav Bar Dimensions & Positioning*/
 #header{
         background-color: red;
         width: 100%;
@@ -13,19 +15,8 @@ html{
         padding-left: 20px;
 }
 
-
-#current{
-          font-weight: bold;
-          font-size: 2em;
-}
-
-.buttons {
-            height: 50px;
-            width: 50px;
-            border-radius: 50px;
-}
-
-table {
+/*Nav Bar Table Structure*/
+#nav_bar {
         width: 80%;
         height: 60px;
         text-align: center;
@@ -34,10 +25,28 @@ table {
 
 }
 
-td{
+/*Nav Bar Cell Structure*/
+.nav_cells {
         padding-left: 160px;
 }
 
+
+/*Nav Bar Current Page Icon*/
+#current{
+          font-weight: bold;
+          font-size: 2em;
+}
+
+/*Nav Bar Other Page Circular Icons*/
+.buttons {
+            height: 50px;
+            width: 50px;
+            border-radius: 50px;
+}
+
+
+/********************Sidebar********************/
+/*Container Div for Sidebar & Body*/
 #container{
             width:1200px;
             position: absolute;
@@ -46,64 +55,115 @@ td{
             height: auto;
 }
 
+/*Sidebar Dimensions & Positioning*/
 #sidebar{
         background-color: #66a1d2;
         width:15%;
-        height: 1600px;
+        height: 1750px;
         float:left;
         position: absolute;
         padding-top: 110px;
         padding-left: 20px;
-
-
 }
 
+/*Sidebar Headings*/
 h2 {
     padding-left: 5px;
 }
 
+/*Sidebar Links List*/
+
 ul{
         margin-left: -35px;
         width:150px;
+        color: red;
 }
 
-#content{
-        background-color: #e7fff0;
-        width:85%;
-        height: 1600px;
-        float:left;
-        position: absolute;
-        margin-left: 15%;
-        padding-top: 110px;
-        font-size: 14pt;
-}
-
-h1 {
-        text-align:center;
-}
-
-#blog {
-        padding: 20px 100px 20px 100px;
-}
-
-#navigate {
-            width: 800px;
-            text-align: center;
-}
-
-.nav {
-        padding-left: 40px;
-}
-
-#screenshot{
-            height: 300px;
-            width: 300px;
-}
-
-#references {
-            width: 500px;
-}
+/*Link Formatting */
 
 a {
     color:black;
 }
+
+
+/******************Body Section*****************/
+/*Main Body Dimensions & Positioning*/
+#main{
+        background-color: #e7fff0;
+        width:85%;
+        height: 1750px;
+        float:left;
+        position: absolute;
+        margin-left: 15%;
+        padding-top: 110px;
+
+}
+
+/*Blog Date*/
+#blog_date {
+            font-family: cursive;
+}
+
+/*Blog Title*/
+#blog_title {
+        text-align:center;
+}
+
+/*Blog Body*/
+#blog_content {
+        padding: 0px 100px 0px 100px;
+        font-size: 14pt;
+}
+
+/*Blog Code Examples*/
+code {
+      color:red;
+}
+
+/*Blog Signature*/
+#signature{
+            font-family: cursive;
+            font-weight: 900;
+            text-align: left;
+            font-size: 16pt;
+}
+
+
+
+/*Blog Next & Prev Buttons Table Structure*/
+#blog_navigation{
+            margin-top: 50px;
+            margin-left: 40%;
+            width: 180px;
+}
+
+/*Blog Next & Prev Buttons */
+.next_prev {
+            width: 60px;
+            text-align: center;
+            height: 60px;
+            border-radius: 60pt;
+            background: red;
+            color: white;
+            text-decoration: none;
+
+
+}
+
+
+/*******************Page Specific Formats**********************/
+/*t2-css-design.html "HTML/CSS Classes & ID's" */
+#screenshot{
+            height: 300px;
+            width: 400px;
+            border: 1pt dotted red;
+            margin-left: 25%;
+}
+
+/*c4-tech-issues.html "The Gender Gap" sources */
+#references {
+            width: 500px;
+            color: red;
+}
+
+

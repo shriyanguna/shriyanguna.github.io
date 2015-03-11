@@ -9,12 +9,12 @@
 
     <body>
       <div id="header">
-        <table>
+        <table id="nav_bar">
           <tr>
-            <td><a href="../index.html">Shriyan C. Gunasekera </a></td>
-            <td><a href="../portfolio/portfolio.html"><img class= "buttons" src="../imgs/shristar.jpg"/></a></td>
-            <td id="current"> Blog </td>
-            <td> <a href="../inspiration/inspiration.html"><img class= "buttons" src="../imgs/sea.jpg"/></a></td>
+            <td class="nav_cells"><a href="../index.html">Shriyan C. Gunasekera </a></td>
+            <td class="nav_cells"><a href="../portfolio/portfolio.html"><img class= "buttons" src="../imgs/shristar.jpg"/></a></td>
+            <td class="nav_cells" id="current"> Blog </td>
+            <td class="nav_cells"> <a href="../inspiration/inspiration.html"><img class= "buttons" src="../imgs/sea.jpg"/></a></td>
            </tr>
         </table>
 
@@ -27,7 +27,7 @@
           <ul>
             <li><a href= "t1-git-blog.html">Git, Guthub Explained!</a></li>
             <li><a href="c1-chefs-kitchen.html"> Chef's Kitchen</a></li>
-            <li><a href="t2-css-design.html"> HTML/CSS Classes vs. ID's</a></li>
+            <li><a href="t2-css-design.html">HTML/CSS Classes vs. ID's</a></li>
             <li><a href="t3-arrays-hashes.html"> Ruby Arrays & Hashes</a></li>
             <li><a href="c3_thinking-style.html"> Thinking Style: DBC Struggles</a></li>
             <li><a href="c4-tech-issues.html"> The Gender Gap</a></li>
@@ -42,12 +42,12 @@
           </ul>
          </div>
 
-        <div id="content">
-          <div id="blog">
-            <h3>15 February 2015<!--Date Goes Here--> </h3><br>
-            <h1>HTML/CSS Classes vs. ID's<!--Blog Title Goes Here--></h1>
+        <div id="main">
+          <div id="blog_content">
+            <h3 id="blog_date"> 15 February 2015<!--Date Goes Here--> </h3><br>
+            <h1 id="blog_title">HTML/CSS Classes vs. ID's</h1>
             <br>
-            <p>
+            <p><!--Blog Post Goes Here-->
               Hi there! Hope you're well. It's been an incredibly busy week for me, as this week we were tasked with learning both HTML and CSS in order to build our own personal websites! Fortunately, I managed to get it all done, and as a result, you're now able to read this very blog post in a brand new, constantly-improving website!<br><br>
 
               As I was learning HTML/CSS one feature I found especially interesting was the ability to use "ID's" and "classes" to style HTML elements. When used properly, classes and ID's allow you to streamline the styling process, by targeting specific elements (including paragraphs, headers, div's, tables, etc.).<br><br>
@@ -76,17 +76,28 @@
                 </tr>
               </table>
 
-          </p>
-          <table id="navigate">
+            </p>
+            <section id="signature">- S.G. </section>
+
+          <br>
+          <table id="blog_navigation">
             <tr>
-              <td class="nav"><a href="c1-chefs-kitchen.html">Previous <!--Link to next Blog Post--></a></td>
-              <td class="nav"><a href="t3-arrays-hashes.html">Next </a></td>
+              <td class="next_prev"><a class="next_prev" href="c1-chefs-kitchen.html">Prev</a></td>
+              <td></td>
+              <td class="next_prev"><a class="next_prev" href="t3-arrays-hashes.html">Next</a></td>
           </tr>
           </table>
+
+
 
           </div>
          </div>
       </div>
+
+
+
+
+
 
      </body>
  </html>

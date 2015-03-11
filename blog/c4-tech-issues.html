@@ -9,12 +9,12 @@
 
     <body>
       <div id="header">
-        <table>
+        <table id="nav_bar">
           <tr>
-            <td><a href="../index.html">Shriyan C. Gunasekera </a></td>
-            <td><a href="../portfolio/portfolio.html"><img class= "buttons" src="../imgs/shristar.jpg"/></a></td>
-            <td id="current"> Blog </td>
-            <td> <a href="../inspiration/inspiration.html"><img class= "buttons" src="../imgs/sea.jpg"/></a></td>
+            <td class="nav_cells"><a href="../index.html">Shriyan C. Gunasekera </a></td>
+            <td class="nav_cells"><a href="../portfolio/portfolio.html"><img class= "buttons" src="../imgs/shristar.jpg"/></a></td>
+            <td class="nav_cells" id="current"> Blog </td>
+            <td class="nav_cells"> <a href="../inspiration/inspiration.html"><img class= "buttons" src="../imgs/sea.jpg"/></a></td>
            </tr>
         </table>
 
@@ -27,7 +27,7 @@
           <ul>
             <li><a href= "t1-git-blog.html">Git, Guthub Explained!</a></li>
             <li><a href="c1-chefs-kitchen.html"> Chef's Kitchen</a></li>
-            <li><a href="t2-css-design.html"> HTML/CSS Classes vs. ID's</a></li>
+            <li><a href="t2-css-design.html">HTML/CSS Classes vs. ID's</a></li>
             <li><a href="t3-arrays-hashes.html"> Ruby Arrays & Hashes</a></li>
             <li><a href="c3_thinking-style.html"> Thinking Style: DBC Struggles</a></li>
             <li><a href="c4-tech-issues.html"> The Gender Gap</a></li>
@@ -42,11 +42,13 @@
           </ul>
          </div>
 
-        <div id="content">
-          <div id="blog">
-            <h3>1 March 2015<!--Date Goes Here--> </h3><br>
-            <h1>The Gender Gap<!--Blog Title Goes Here--></h1>
-            <br>
+        <div id="main">
+          <div id="blog_content">
+            <!--Blog Date Goes Here-->
+            <h3 id="blog_date"> 1 March 2015 </h3><br>
+            <!--Blog Title Goes Here-->
+            <h1 id="blog_title">The Gender Gap</h1><br>
+            <!--Blog Post Goes Here-->
             <p>
               This past week Hillary Clinton made headlines when she publicly criticized the tech industry for its widening gender gap, as it relates to women. Speaking about the industry and its inclusiveness of women at the Watermark Silicon Valley Conference, Clinton remarked, "We're going backward in a field that is supposed to be all about moving forward."
               <br><br>
@@ -65,21 +67,31 @@
                 As disappointing as those numbers are, what's perhaps more egregious is the number of women in the tech industry who claim they have been victims of sexual harassment and hostile work environments. Many women feel they have been passed up for promotions strictly because of their gender. And it is common to hear women say they feel underestimated by their male counterparts, and that they feel bound by an indestructible glass ceiling. Add to all that the fact that there still remains a lack of pay equality between women and men across industries, and it seems the tech world is quite opposed to seeing women succeed. As a result, many women in tech decide to leave the field and pursue other careers.<br><br>
                 Even at DBC, I've heard my female peers express that the issue of a gender gap is a very real concern of theirs. As a man, it's something I never really thought about prior to hearing their concerns, and I think that's a big part of the problem.<br><br>
                 While I don't feel informed enough to tackle all the issues involved in achieving gender equality, I do see a simple place where I, as a man, can start to address the problem. Often, it seems women who vocalize feeling mistreated in the workplace receive a great deal of pushback from their male counterparts. This is unacceptable. If someone expresses to you that they're uncomfortable or feel mistreated, that's the end of the story. There's no need for debate or pushback. You can't tell someone else how to feel. Nor should you. Instead you should accept the concerns they are bringing to your attention and address them so they are no longer an issue. That seems like common sense.<br><br>
-                Certainly, the issue is more complex and the suggestion above is not meant to be an end all solution, but rather a small step in the right direction. For me personally, after researching the topic of the gender gap in the tech industry, I am more aware of a serious issue that exists, and I will make sure to be conscious of it as I continue my career development in this industry. <br><br>
-                -Shriyan
+                Certainly, the issue is more complex and the suggestion above is not meant to be an end all solution, but rather a small step in the right direction. For me personally, after researching the topic of the gender gap in the tech industry, I am more aware of a serious issue that exists, and I will make sure to be conscious of it as I continue my career development in this industry.
 
+            </p>
 
-          </p>
-          <table id="navigate">
+          <!--Signature to end Blog Post-->
+            <section id="signature">- S.G. </section><br>
+
+          <!--Next & Previous Blog Navigation Buttons-->
+          <table id="blog_navigation">
             <tr>
-              <td class="nav"><a href="c3_thinking-style.html">Previous <!--Link to next Blog Post--></a></td>
-              <td class="nav"><a href="t4-enumerable-methods.html">Next<!--Link to next Blog Post--></a></td>
+              <td class="next_prev"><a class="next_prev" href="c3_thinking-style.html">Prev</a></td>
+              <td></td>
+              <td class="next_prev"><a class="next_prev" href="t4-enumerable-methods.html">Next</a></td>
           </tr>
           </table>
+
 
           </div>
          </div>
       </div>
+
+
+
+
+
 
      </body>
  </html>
