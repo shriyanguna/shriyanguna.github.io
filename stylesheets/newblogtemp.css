@@ -59,7 +59,7 @@ html{
 #sidebar{
         background-color: #66a1d2;
         width:15%;
-        height: 1900px;
+        height: 2000px;
         float:left;
         position: absolute;
         padding-top: 110px;
@@ -91,7 +91,7 @@ a {
 #main{
         background-color: #e7fff0;
         width:85%;
-        height: 1900px;
+        height: 2000px;
         float:left;
         position: absolute;
         margin-left: 15%;
