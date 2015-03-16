@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+ <html>
+
+   <head>
+     <title>Shriyan's Blog</title>
+     <link rel="stylesheet" type="text/css" href="../stylesheets/default.css" >
+     <link rel="stylesheet" type="text/css" href="../stylesheets/newblogtemp.css" >
+    </head>
+
+    <body>
+      <div id="header">
+        <table id="nav_bar">
+          <tr>
+            <td class="nav_cells"><a href="../index.html">Shriyan C. Gunasekera </a></td>
+            <td class="nav_cells"><a href="../portfolio/portfolio.html"><img class= "buttons" src="../imgs/shristar.jpg"/></a></td>
+            <td class="nav_cells" id="current"> Blog </td>
+            <td class="nav_cells"> <a href="../inspiration/inspiration.html"><img class= "buttons" src="../imgs/sea.jpg"/></a></td>
+           </tr>
+        </table>
+
+        </p>
+        </div>
+
+      <div id="container">
+        <div id="sidebar">
+          <h2>Blog Entries</h2>
+          <ul>
+            <li><a href= "t1-git-blog.html">Git, Guthub Explained!</a></li>
+            <li><a href="c1-chefs-kitchen.html"> Chef's Kitchen</a></li>
+            <li><a href="t2-css-design.html">HTML/CSS Classes vs. ID's</a></li>
+            <li><a href="t3-arrays-hashes.html"> Ruby Arrays & Hashes</a></li>
+            <li><a href="c3_thinking-style.html"> Thinking Style: DBC Struggles</a></li>
+            <li><a href="c4-tech-issues.html"> The Gender Gap</a></li>
+            <li><a href="t4-enumerable-methods.html"> Enumerable Methods: Map</a></li>
+            <li><a href="c5-feedback.html"> Pair Programming</a></li>
+            <li><a href="t5-ruby-classes.html"> Ruby Classes</a></li>
+            <li><a href="c6-stereotype-threat.html"> Stereotype Threat</a></li>
+            <li><a href="t6-oop-concepts.html"> Ruby Variables</a></li>
+          </ul>
+          <br><br><br>
+          <h2> Other Posts </h2>
+          <ul>
+            <li><a href= "../GPS/gps1-2.html"> GPS - Week 3 </a></li>
+          </ul>
+         </div>
+
+        <div id="main">
+          <div id="blog_content">
+            <!--Blog Date Goes Here-->
+            <h3 id="blog_date"> 15 March 2015 </h3><br>
+            <!--Blog Title Goes Here-->
+            <h1 id="blog_title">Ruby Variables</h1><br>
+            <!--Blog Post Goes Here-->
+            <p>
+              Ruby has 5 main variable types: Global Variables, Constants, Class Variables, Instance Variables, and Local Variables.<br><br>
+
+              As you begin to design programs, the most important thing to consider when deciding what sort of variable to use is scope, or where in your program you want a variable to be accessible.<br><br>
+
+              Global Variables (Ex. <code>$global_variable = 100</code>)<br><br>
+              These are easy to tell apart because they always begin with a $.  Global variables, as their name suggests, can be accessed from anywhere within your program. Consequently, they need to be used sparingly and careful thought should always be made before using a global variable. If you ever run into trouble, global variables can make it difficult to isolate a bug, because their scope is the entirety of a program. Whether you define a global variable separately, in a class, or in module, its scope will encompass everything! Global variables should not change, however, Ruby will allow you to reassign them but will also prompt you that you are doing something very risky.<br><br>
+
+              Constants (Ex. <code>HOURS_IN_DAY = 24</code>)<br><br>
+              Constants are similar to global variables but their scope is slightly more limited. Constants always start with a capital letter and as their name suggests, you should not expect a constant's value to change, though Ruby will allow you to change them with a warning. Unlike global variables, the scope of a constant depends on where it is defined. Constants may be initialized within a class or module, in which case they can be accessed only within said class or module. Or they may also be defined outside of a class or module entirely, in which case their scope becomes global. They may NOT be defined within a method.<br><br>
+
+              Class Variables (Ex. <code>@@types_of_cars = 12</code>)<br><br>
+              Class variables always start with @@ and as their name suggests, have a scope that is limited to the class in which they are defined.  They must be initialized before they can be used in any methods of a class, which means they are usually defined immediately after your class. A key distinction of class variables has to do with inheritance. When you define a class variable, you are setting it for a superclass and any subclasses that should result from that superclass. <br><br>
+
+              Instance Variables (Ex. <code>@type_of_cars = 12</code>)<br><br>
+              Instance variables are similar to class variables but they always begin with a single @. Unlike class variables, instance variables ARE defined within methods and can then be used within any instance of their class. The value of an instance variable can be changed easily, but if an instance variable is used in a number of places in the same class, it can cause unexpected bugs when changes are made.<br><br>
+
+              Local Variables (Ex. <code>x = 12</code>)<br><br>
+              Local variables have the smallest scope in Ruby, as their scope is limited to where they are defined.  They are written in all lower case letters and are typically defined and used in a single method or block, though they can also be initialized to have a larger scope as well.<br><br>
+
+            </p>
+
+          <!--Signature to end Blog Post-->
+            <section id="signature">- S.G. </section><br>
+
+          <!--Next & Previous Blog Navigation Buttons-->
+          <table id="blog_navigation">
+            <tr>
+              <td class="next_prev"><a class="next_prev" href="c6-stereotype-threat.html">Prev</a></td>
+              <td></td>
+              <td class="next_prev"><a class="next_prev" href="t6-oop-concepts.html">Next</a></td>
+          </tr>
+          </table>
+
+
+          </div>
+         </div>
+      </div>
+
+
+
+
+
+
+     </body>
+ </html>
