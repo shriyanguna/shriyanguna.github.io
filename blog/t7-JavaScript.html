@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+ <html>
+
+   <head>
+     <title>Shriyan's Blog</title>
+     <link rel="stylesheet" type="text/css" href="../stylesheets/default.css" >
+     <link rel="stylesheet" type="text/css" href="../stylesheets/newblogtemp.css" >
+    </head>
+
+    <body>
+      <div id="header">
+        <table id="nav_bar">
+          <tr>
+            <td class="nav_cells"><a href="../index.html">Shriyan C. Gunasekera </a></td>
+            <td class="nav_cells"><a href="../portfolio/portfolio.html"><img class= "buttons" src="../imgs/shristar.jpg"/></a></td>
+            <td class="nav_cells" id="current"> Blog </td>
+            <td class="nav_cells"> <a href="../inspiration/inspiration.html"><img class= "buttons" src="../imgs/sea.jpg"/></a></td>
+           </tr>
+        </table>
+
+        </p>
+        </div>
+
+      <div id="container">
+        <div id="sidebar">
+          <h2>Blog Entries</h2>
+          <ul>
+            <li><a href= "t1-git-blog.html">Git, Guthub Explained!</a></li>
+            <li><a href="c1-chefs-kitchen.html"> Chef's Kitchen</a></li>
+            <li><a href="t2-css-design.html">HTML/CSS Classes vs. ID's</a></li>
+            <li><a href="t3-arrays-hashes.html"> Ruby Arrays & Hashes</a></li>
+            <li><a href="c3_thinking-style.html"> Thinking Style: DBC Struggles</a></li>
+            <li><a href="c4-tech-issues.html"> The Gender Gap</a></li>
+            <li><a href="t4-enumerable-methods.html"> Enumerable Methods: Map</a></li>
+            <li><a href="c5-feedback.html"> Pair Programming</a></li>
+            <li><a href="t5-ruby-classes.html"> Ruby Classes</a></li>
+            <li><a href="c6-stereotype-threat.html"> Stereotype Threat</a></li>
+            <li><a href="t6-oop-concepts.html"> Ruby Variables</a></li>
+            <li><a href="c7-values.html"> My Values</a></li>
+          </ul>
+          <br><br><br>
+          <h2> Other Posts </h2>
+          <ul>
+            <li><a href= "../GPS/gps1-2.html"> GPS - Week 3 </a></li>
+          </ul>
+         </div>
+
+        <div id="main">
+          <div id="blog_content">
+            <!--Blog Date Goes Here-->
+            <h3 id="blog_date"> 22 March 2015 </h3><br>
+            <!--Blog Title Goes Here-->
+            <h1 id="blog_title">JavaScript vs. Ruby: Methods</h1><br>
+            <!--Blog Post Goes Here-->
+            <p>
+              This week we began learning JavaScript (JS) after spending the past three weeks exclusively on Ruby. The transition has not been too bad, as the languages are surprisingly quite similar in many ways. One of the key ways the two languages differ, however, is the way in which you create methods.<br><br>
+              Ruby<br><br>
+              As a refresher, we'll start with Ruby. Ruby has a module-class structure that makes it a little bit different from JS. You can define a new class and then within that class you can define new methods that will be available to any instances of that class. You would do that like, so:<br><br>
+
+              <code>
+              class Athlete<br>
+
+              &nbsp;def initialize(name, number)<br>
+              &nbsp;&nbsp;@name = name<br>
+              &nbsp;&nbsp;@number = number<br>
+              &nbsp;end<br><br>
+              &nbsp;def change_number(new_number)<br>
+              &nbsp;&nbsp;@number = new_number<br>
+              &nbsp;&nbsp;p "#{@name}'s new number is #{@number}!"<br>
+              &nbsp;end<br>
+              end<br><br>
+              kobe = Athlete.new("Kobe Bryant", 8)<br>
+              kobe.change_number(24)<br>
+              >>"Kobe Bryant's new number is 24!"
+              </code><br><br>
+              JavaScript<br><br>
+              To accomplish the same thing in JS, you would have to do things slightly differently. From my limited experience with JavaScript, I'd say JS is less focused on classes and more focused on individual objects and functions. Objects in JS are pretty similar to hashes in Ruby. You create an object and give it property-property value pairs of data the same way you would create a hash in Ruby and give it key-value pairs.<br><br>
+
+              So first we would create the object kobe by declaring it as a variable and giving it properties and property values between curly braces, much like a hash in Ruby.<br><br>
+
+              <code>
+              var kobe = {<br>
+              &nbsp;&nbsp;name: "Kobe Bryant",<br>
+              &nbsp;&nbsp;number: 8<br>
+              };
+              </code><br><br>
+              Next, we would create a function changeNumber that could be used to change the number property value of any object. We would again declare it as a variable but this time also use the "function" keyword. The parentheses after the function refers to arguments we want the function to take, in this case our new number. The word "this" represents a placeholder that makes our function easily accessible to any object, and ".number" refers to the property of that object we want to change. (Sidenote: console.log is the JS equivalent of printing to a screen in Ruby)<br><br>
+
+              <code>
+                var changeNumber = function(new_number){<br>
+                &nbsp;&nbsp;this.number = new_number<br>
+                &nbsp;&nbsp;console.log(this.name + "'s new number is "" + this.number)<br>
+                };
+              </code><br><br>
+              Finally, we could then make this generic function accessible to the kobe object specifically, by making it a method available to the object.<br><br>
+              <code>
+                kobe.changeNumber = changeNumber;
+              </code><br><br>
+              And then call the method to get the same result as our Ruby example.<br><br>
+              <code>
+                kobe.changeNumber(24);<br>
+                >>"Kobe Bryant's new number is 24!"
+              </code>
+
+            </p>
+
+          <!--Signature to end Blog Post-->
+            <section id="signature">- S.G. </section><br>
+
+          <!--Next & Previous Blog Navigation Buttons-->
+          <table id="blog_navigation">
+            <tr>
+              <td class="next_prev"><a class="next_prev" href="t6-oop-concepts.html">Prev</a></td>
+              <td></td>
+              <td class="next_prev"><a class="next_prev" href="c7-values.html">Next</a></td>
+          </tr>
+          </table>
+
+
+          </div>
+         </div>
+      </div>
+
+
+
+
+
+
+     </body>
+ </html>
