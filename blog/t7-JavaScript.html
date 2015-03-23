@@ -75,9 +75,9 @@
               >>"Kobe Bryant's new number is 24!"
               </code><br><br>
               JavaScript<br><br>
-              To accomplish the same thing in JS, you would have to do things slightly differently. From my limited experience with JavaScript, I'd say JS is less focused on classes and more focused on individual objects and functions. Objects in JS are pretty similar to hashes in Ruby. You create an object and give it property-value pairs the same way you would create a hash in Ruby and give it key-value pairs.<br><br>
+              To accomplish the same thing in JS, you have to do things slightly differently. From my limited experience with JavaScript, I'd say JS is less focused on classes and more focused on individual objects and functions. Objects in JS are pretty similar to hashes in Ruby. You create an object and give it property-value pairs the same way you would create a hash in Ruby and give it key-value pairs.<br><br>
 
-              So first we would create the object kobe by declaring it as a variable and giving it properties and property values between curly braces, much like a hash in Ruby.<br><br>
+              So first we create the object "kobe" by making it a variable and giving it properties and property values between curly braces, much like a hash in Ruby.<br><br>
 
               <code>
               var kobe = {<br>
@@ -85,7 +85,7 @@
               &nbsp;&nbsp;number: 8<br>
               };
               </code><br><br>
-              Next, we would create a function changeNumber that could be used to change the number property of any object. We would again declare it as a variable but this time also use the "function" keyword. The parentheses after the function contain the arguments we want the function to take, which in this case is our new_number. The word "this" represents a placeholder that makes our function easily accessible to any object, and ".number" refers to the property we want to change. (Sidenote: console.log is the JS equivalent of printing to a screen in Ruby)<br><br>
+              Next, we create a function "changeNumber" that can be used to change the number property of any object. We again declare it as a variable but this time also use the "function" keyword. The parentheses after the function contain the arguments we want the function to take, which in this case is our new_number. The word "this" represents a placeholder that makes our function easily accessible to any object, and ".number" refers to the property we want to change. (Sidenote: console.log is the JS equivalent of printing to a screen in Ruby)<br><br>
 
               <code>
                 var changeNumber = function(new_number){<br>
@@ -93,7 +93,7 @@
                 &nbsp;&nbsp;console.log(this.name + "'s new number is " + this.number)<br>
                 };
               </code><br><br>
-              Finally, we could then make this generic function accessible to the kobe object specifically, by making it a method available to the object.<br><br>
+              Finally, we make this generic function accessible to the "kobe" object, by making it a method available to the object.<br><br>
               <code>
                 kobe.changeNumber = changeNumber;
               </code><br><br>
