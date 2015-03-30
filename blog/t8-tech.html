@@ -40,6 +40,7 @@
             <li><a href="t7-JavaScript.html"> JavaScript vs. Ruby: Methods</a></li>
             <li><a href="c8-conflict.html"> Breaking Down Conflicts</a></li>
             <li><a href="t8-tech.html"> What the Heck is Rails?</a></li>
+
           </ul>
           <br><br><br>
           <h2> Other Posts </h2>
@@ -52,43 +53,18 @@
         <div id="main">
           <div id="blog_content">
             <!--Blog Date Goes Here-->
-            <h3 id="blog_date"> 1 March 2015 </h3><br>
+            <h3 id="blog_date"> 29 March 2015 </h3><br>
             <!--Blog Title Goes Here-->
-            <h1 id="blog_title">Enumerable Methods: Map</h1><br>
+            <h1 id="blog_title">What the Heck is Rails?</h1><br>
             <!--Blog Post Goes Here-->
             <p>
-              Hello all! Hope your weekends were great! Today I'd like to teach you about an important enumerable method known as the "map" method.<br><br>
-              We've already learned that ruby uses arrays and hashes to store large collections of data. While that's great, there must me more we can do with arrays and hashes than just use them to store data. What if we wanted to take all of that data and transform every single element in a collection into something completely new with a single line of code? Is that even possible? The answer is unsurprisingly a resounding YES! <br><br>
-              Through the used of enumerable methods we are able to iterate through every piece of data in an array or hash and transform it into something completely new. The word "iterate" is often used in coding and pretty much just means to create a new version of something. So when we iterate through an array using an enumerable method, we are creating a new version of that array.<br><br>
-              The map method, more specifically, allows us to take an array/hash and run a block of code on each and every element, thus creating a new collection of data. <br><br>
-              Here's how it works.<br><br>
+              So I've been doing this course for quite some time, and I have an admission to make: up until today I still had no idea what Rails was. I know Ruby. I’ve practiced Ruby. I've done challenges with Ruby. I've built things with Ruby. But to this point my experience with Rails is nonexistent. Often I'll hear the term "Ruby on Rails." And it always made me a bit nervous not knowing what that really meant. But alas! Now I know. And soon you will too.<br><br>
 
-              We start with an array:<br><br>
+              So what is Rails?  Well, I've still got a lot to learn but my understanding is Rails is an open source web framework that provides you with a structure you can use to combine Ruby, JavaScript, HTML, and CSS in order to create dynamic web applications. Rails has a basic structure and follows certain conventions that are followed by everyone in the "Rails Community," which makes it easy to get support and share ideas. Specifically, two important conventions followed in Rails are: "Don't Repeat Yourself" (avoid repetitive code) and “Convention over Configuration” (which basically refers to default Rails features that allow you to avoid needing to write tons of code to configure certain settings). Rails is also characterized by downloadable extensions, called gems, which are released regularly and add new features to Ruby in order to expand what you are able to do on Rails. <br><br>
 
-              <code>
-                array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-              </code><br><br>
+              So while Ruby is the language you will be writing, Rails is the notebook that holds everything and turns the ideas in your head and the code you write into something tangible.
 
-              We decide we want to do something to that array, for instance multiply every number by 100, so we call upon the map method. <br><br>
 
-              <code>
-                new_array = array.map {|i| i * 100}
-              </code> <br><br>
-
-              The bit in the curly braces {} is our code block and it can be anything we want it to be depending on how we want to transform our array. That | i | is a variable we use to represent each element in the array. And i * 100 is telling ruby to iterate through the array and multiply each element in the array by 100. <br><br>
-
-              The result we get is a completely new and separate array that looks like this: <br><br>
-
-              <code>
-                new_array = [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000]
-              </code><br><br>
-
-              And if we still want our old original array, we can still access that too, because the map method is a non-destructive method, meaning it doesn't destroy our original. <br><br>
-              <code>
-                array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-              </code><br><br>
-
-              And that's the map method!
 
             </p>
 
@@ -98,9 +74,9 @@
           <!--Next & Previous Blog Navigation Buttons-->
           <table id="blog_navigation">
             <tr>
-              <td class="next_prev"><a class="next_prev" href="c4-tech-issues.html">Prev</a></td>
+              <td class="next_prev"><a class="next_prev" href="c8-conflict.html">Prev</a></td>
               <td></td>
-              <td class="next_prev"><a class="next_prev" href="c5-feedback.html">Next</a></td>
+              <td class="next_prev"><a class="next_prev" href="t8-tech.html">Next</a></td>
           </tr>
           </table>
 
